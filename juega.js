@@ -16,3 +16,6 @@ boton.addEventListener("click", function () {
 
 	window.open(escucha, "_self");
 });
+
+
+

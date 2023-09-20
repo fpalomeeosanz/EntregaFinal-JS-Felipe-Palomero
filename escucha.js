@@ -4,24 +4,16 @@ let audioEscucha = document.getElementById("audioEscucha");
 
 //empate de busquedas y play
 audioEscucha.src = "../audios/" + queryCuentos[1];
-audioEscucha.play();
+//arreglado el problema del auto play sin hacer funciones extras, solo "".load"
+audioEscucha.load();
 
-//para el problema del autoplay bloqueado ayuda de documentacion
-audioEscucha.addEventListener("play", function() {
-  function handlePlayButton() {
-  if (audioEscucha.paused) {
-      audioEscucha.play();
-  } else {
-      audioEscucha.pause();
-  }
-}
-});
 
-// Muestra una alerta si ocurre un error de carga
+
+//mensaje de error cuando no hay cuentos crgados 
 audioEscucha.addEventListener('error', function () {
   swal({
     title: "UPS!! Estamos trabajando para ti!!!",
-    text: "Este audiocuento está en proceso, pero puedes escuchar otros en JUEGA.",
+    text: "Este audiocuento está en proceso, pero puedes elejir: Aventuras, Dinosaurio, Espacio, Varita o Fantasías, Astronauta, Castillo, Cohete o Risas, Unicornio, Bosque, Bicicleta",
     icon: "warning",
     buttons: true,
     dangerMode: true,

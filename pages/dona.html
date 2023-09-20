@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <title>Dona para seguir creando historias</title>
 </head>
 <body>
@@ -47,6 +48,15 @@
         <h1>DONA</h1>        
         <p>Para seguir contando mas historias!!!
         </p>
+        <div id="donador">
+            <label id="textoDonador" for="montoDonacion">¿Cuánto quieres donar hoy?</label>
+            <input type="number" id="montoDonacion" min="1" value="10">
+            <button id="donarMas">Agregar 10</button>
+            <button id="donarMenos">Quitar 10</button>
+            <button id="hacerDonacion">Confirmar Donacion</button>
+            <div id="message">
+         </div>
+        </div>
         <section class="botones">
             <button class="dona">
                 <a href="https://www.paypal.com/es/webapps/mpp/charity" target=”_blank”>Dona
@@ -71,5 +81,6 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="../dona.js"></script>
 </body>
 </html>

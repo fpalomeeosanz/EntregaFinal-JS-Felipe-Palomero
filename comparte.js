@@ -48,8 +48,8 @@ buttonIdeas.addEventListener("click", () => {
     inputUsuario.value = '';
     inputIdea.value = '';
 
-    //texto de con biblioteca de sweet alert
-    swal("WOW!!! Que buena idea!!! Ya la guardamos, recuerda estar atento para saber si la tuya será la proxima!");
+    //texto de con biblioteca de sweet alert que incuye usuario en pantalla
+    swal("WOW!!! Que buena idea!!! " + usuario + " Ya la guardamos, recuerda estar atento para saber si la tuya será la proxima!");
 });
 
 //para guardar las ideas del localstorage o como respaldo
@@ -60,6 +60,16 @@ if (ideasEnBruto.length > 0) {
         baseDeIdeas.push(idea);
     });
 }
-//solo para checar
-console.log(baseDeIdeas)
-console.log(ideasEnBruto)
+
+//para poder ver las ideas de os demas usuarios
+const verIdeasButton = document.getElementById("verIdeas");
+verIdeasButton.addEventListener("click", () => {
+    const ideasTexto = baseDeIdeas.map(idea => `${idea.usuario}: ${idea.nuevaIdeaCuento}`).join('\n');
+
+    if (ideasTexto === '') {
+        swal("No hay ideas de otros usuarios disponibles.");
+    } else {
+        swal("Ideas de Otros Usuarios", ideasTexto);
+    }
+});
+

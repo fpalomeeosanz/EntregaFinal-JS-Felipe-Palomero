@@ -290,6 +290,9 @@ footer {
 	border:  none; 
   margin-left: 2rem;
 }
+#donarMas:hover{
+  transform: scale(1.2);
+}
 #donarMenos{
   font-family: 'Luckiest Guy';
 	color: rgb(84, 88, 109);
@@ -299,6 +302,9 @@ footer {
 	border:  none;
   margin-left: 2rem;
 }
+#donarMenos:hover{
+  transform: scale(1.2);
+}
 #hacerDonacion{
   font-family: 'Luckiest Guy';
 	color: rgb(62, 136, 239);
@@ -306,6 +312,9 @@ footer {
 	text-shadow: 5px 3px 5px black;
 	background: transparent;
 	border:  none;
+}
+#hacerDonacion:hover{
+  transform: scale(1.2);
 }
 #textoDonador{
   font-family: 'Luckiest Guy';
@@ -367,9 +376,15 @@ footer {
   font-size: 3rem;
   color: #b5fb1e;
 }
+#escucha:hover{
+  transform: scale(1.2);
+}
 #textoJuega{
   font-size: 3rem;
   color: #e7f306;
+}
+#textoJuega:hover{
+  transform: scale(1.2);
 }
 #userInfo{
   text-align: center;
@@ -383,8 +398,27 @@ footer {
   border-radius: 100px;
   border: 5px dotted #e68829;
 }
-#loginButton{
+#irSpotify{
+  text-align: center;
+  font-family: 'Luckiest Guy';
   font-size: 1rem;
-  color: #06f34d;
+  color: white;
+  text-shadow: 5px 3px 5px black;
+  padding: 2rem;
+  margin: 2rem;
+}
+#botonSpotify{
+  background-image: linear-gradient(#051628, rgb(254, 233, 4));
+  height: 3rem;
+  width: 15rem;
+  font-size: 1rem;
+  font-family: 'Luckiest Guy';
+  text-shadow: 3px 0px 0px black;
+  text-align: center;
+  color: white;
   border-radius: 100px;
+  border: 5px dotted #c1f507;
+}
+#botonSpotify:hover {
+  transform: scale(1.2); 
 }

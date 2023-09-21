@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box; 
+} 
 header {
   display: flex;
   justify-content: space-between;
@@ -39,13 +40,15 @@ main h1 {
 main p {
   text-align: center;
   font-family: 'Luckiest Guy';
+  font-size: 3rem;
   color: white;
   padding: 2rem;
   margin: 2rem;
   background-image: linear-gradient(#7547ff, #1140fb);
   text-shadow: 5px 3px 5px black;
   border-radius: 100px;
-  border: 5px dotted #e68829; }
+  border: 5px dotted #e68829;
+}
 
 main .selector {
   border-radius: 100px;
@@ -60,7 +63,7 @@ main .selector {
   padding: 2rem; }
 
 main .selector select {
-  height: 2rem;
+  height: 3rem;
   border-radius: 100px;
   background-color: #5d5ee6;
   font-family: 'Luckiest Guy';
@@ -261,7 +264,7 @@ footer {
 #recomendaciones{
   text-align: center;
   font-family: 'Luckiest Guy';
-  color: rgb(22, 185, 218);
+  color: rgb(253, 254, 254);
   padding: 2rem;
   margin: 2rem;
   background-image: linear-gradient(#e3ff47, #96fb11);
@@ -285,6 +288,7 @@ footer {
 	text-shadow: 5px 3px 5px black;
 	background: transparent;
 	border:  none; 
+  margin-left: 2rem;
 }
 #donarMenos{
   font-family: 'Luckiest Guy';
@@ -293,10 +297,11 @@ footer {
 	text-shadow: 5px 3px 5px black;
 	background: transparent;
 	border:  none;
+  margin-left: 2rem;
 }
 #hacerDonacion{
   font-family: 'Luckiest Guy';
-	color: rgb(197, 4, 250);
+	color: rgb(62, 136, 239);
 	font-size: 2rem;
 	text-shadow: 5px 3px 5px black;
 	background: transparent;
@@ -310,6 +315,7 @@ footer {
 	background: transparent;
 	border:  none;
 }
+
 #verIdeas{
   text-align: center;
   font-family: 'Luckiest Guy';
@@ -318,7 +324,67 @@ footer {
   text-shadow: 5px 3px 5px black;
   padding: 2rem;
   margin: 2rem;
-  background-image: linear-gradient(#e3ff47, #96fb11);
+  background-image: linear-gradient(#ff9147, #96fb11);
   border-radius: 100px;
   border: 5px dotted #e68829; 
+  
+}
+#selectorInteractivo{
+  font-size: 2rem;
+}
+#cangrejo{
+  margin-left: 2rem;
+}
+#mensajeBienvenida{
+  text-align: center;
+  font-family: 'Luckiest Guy';
+  font-size: 3rem;
+  color: white;
+  text-shadow: 5px 3px 5px black;
+  padding: 2rem;
+  margin: 2rem;
+  background-image: linear-gradient(#e3ff47, #96fb11);
+  border-radius: 100px;
+  border: 5px dotted #e68829;
+}
+#ideasContainer{
+  font-size: 2rem;
+}
+#mensajeComparte{
+  text-align: center;
+  font-family: 'Luckiest Guy';
+  font-size: 2rem;
+  color: white;
+  text-shadow: 5px 3px 5px black;
+  padding: 2rem;
+  margin: 2rem;
+  background-image: linear-gradient( #96fb11, #e3ff47);
+  border-radius: 100px;
+  border: 5px dotted #e68829;
+}
+#escucha{
+  margin-left: 2rem;
+  font-size: 3rem;
+  color: #b5fb1e;
+}
+#textoJuega{
+  font-size: 3rem;
+  color: #e7f306;
+}
+#userInfo{
+  text-align: center;
+  font-family: 'Luckiest Guy';
+  font-size: 2rem;
+  color: white;
+  text-shadow: 5px 3px 5px black;
+  padding: 2rem;
+  margin: 2rem;
+  background-image: linear-gradient( #96fb11, #e3ff47);
+  border-radius: 100px;
+  border: 5px dotted #e68829;
+}
+#loginButton{
+  font-size: 1rem;
+  color: #06f34d;
+  border-radius: 100px;
 }

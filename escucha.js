@@ -4,7 +4,7 @@ let audioEscucha = document.getElementById("audioEscucha");
 
 //empate de busquedas y play
 audioEscucha.src = "../audios/" + queryCuentos[1];
-//arreglado el problema del auto play sin hacer funciones extras, solo "".load"
+//arreglado el problema del auto play sin hacer funciones extras, solo ".load"
 audioEscucha.load();
 
 

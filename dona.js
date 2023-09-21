@@ -1,4 +1,4 @@
-//variables del DOM
+//variables del DOM luego de crear div
 const montoDonaciones = document.getElementById("montoDonacion");
 const donarMasButton = document.getElementById("donarMas");
 const donarMenosButton = document.getElementById("donarMenos");

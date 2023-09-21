@@ -256,6 +256,9 @@ footer {
 	background: transparent;
 	border:  none;
 }
+#buttonIdeas:hover{
+  transform: scale(1.2);
+}
 #input{
   text-align: center;
   font-family: 'Luckiest Guy';
@@ -324,7 +327,6 @@ footer {
 	background: transparent;
 	border:  none;
 }
-
 #verIdeas{
   text-align: center;
   font-family: 'Luckiest Guy';
@@ -336,7 +338,12 @@ footer {
   background-image: linear-gradient(#ff9147, #96fb11);
   border-radius: 100px;
   border: 5px dotted #e68829; 
-  
+}
+#verIdeas:hover{
+  transform: scale(1.2);
+}
+#textoIdeas{
+  font-size: 3rem;
 }
 #selectorInteractivo{
   font-size: 2rem;
